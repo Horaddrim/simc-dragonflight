@@ -2,4 +2,4 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
 - args: [ 'build', '-t', 'us-west2-docker.pkg.dev/sharlayan/simc-${BRANCH_NAME}:${SHORT_SHA}', '--build-arg', 'PTR_DATA=1' ]
 
-timeout: '5400'
+timeout: '5400s'
