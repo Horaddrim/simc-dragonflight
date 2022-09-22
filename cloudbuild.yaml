@@ -5,3 +5,5 @@ steps:
 timeout: '5400s'
 images:
   - 'gcr.io/sharlayan/simc-internal:${BRANCH_NAME}-${SHORT_SHA}'
+options:
+  machineType: 'N1_HIGHCPU_32'
