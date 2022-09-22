@@ -27,7 +27,7 @@ FROM alpine:latest AS build
 ARG THREADS=1
 ARG APIKEY=''
 # TODO: replace with working raid profile for dragonflight once we have a fully working one that is tested by CI
-ARG PGO_PROFILE=""
+ARG PGO_PROFILE="../profiles/CI.simc"
 
 COPY . /app/SimulationCraft/
 
